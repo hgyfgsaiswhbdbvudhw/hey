@@ -187,6 +187,15 @@ uis.InputBegan:Connect(function(input)
 		punching = false
 	end
 end)
+uis.InputBegan:Connect(function(input)
+	if input.KeyCode == Enum.KeyCode.T then
+		if hurt == false then
+		hurt = true
+		elseif hurt == true then
+		hurt = false
+		end
+	end
+end)
 while wait() do
 if not hum then
 break
@@ -215,6 +224,36 @@ end
 		if id ~= run then
         Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. run)[1]
+        Anim = AnimHandler.new(char, animation)
+		Anim.Looped = true
+		Anim:Play() 
+		id = run
+		end
+	end
+	if idle == true and taunt == false and hurt == true and ability == false and mouse1 == false and finish == false then
+		if id ~= i then 
+	    Anim:Stop()
+		animation = game:GetObjects("rbxassetid://" .. hidle)[1]
+        Anim = AnimHandler.new(char, animation)
+		Anim.Looped = true
+		Anim:Play()
+		id = i
+		end
+	end
+	if walking == true and taunt == false and ability == false and hurt == true and sprinting1 == false and finish == false and mouse1 == false then
+		if id ~= walk then
+		Anim:Stop()
+				animation = game:GetObjects("rbxassetid://" .. hwalking)[1]
+        Anim = AnimHandler.new(char, animation)
+		Anim.Looped = true
+		Anim:Play() 
+		id = walk
+		end
+	end
+	if sprinting == true and taunt == false and ability == false and hurt == true and mouse1 == false then
+		if id ~= run then
+        Anim:Stop()
+		animation = game:GetObjects("rbxassetid://" .. hrun)[1]
         Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play() 
