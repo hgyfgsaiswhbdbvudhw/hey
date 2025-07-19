@@ -28,7 +28,8 @@ do
 	local Character = nil
 
 	local CurrentCamera = nil
-
+	local WheelDestroyed = false
+	
 	local Enum = Enum
 	local Custom = Enum.CameraType.Custom
 	local Health = Enum.CoreGuiType.Health
@@ -962,6 +963,7 @@ do
 			game.Players.LocalPlayer.PlayerGui.EmoteMenu.Enabled = false
   			Mobile:Destroy()
 			EmoteGui:Destroy()
+			WheelDestroyed = true
 			if OptionsPermanentDeath and replicatesignal then
 				replicatesignal(ConnectDiedSignalBackend)
 			end
@@ -1229,6 +1231,9 @@ local seven7 = Wheel.EmoteMenuHolder.RadialMenu.Attach["7"].RenderHolder.Asset
 local eight8 = Wheel.EmoteMenuHolder.RadialMenu.Attach["8"].RenderHolder.Asset
 local page = 1
 RunService.RenderStepped:Connect(function()
+if WheelDestroyed == true then
+break
+end;
 	if Wheel.Enabled == true then
 		if page == 1 and Wheel.EmoteMenuHolder then
 			Wheel.EmoteMenuHolder.Last.Visible = false
@@ -1571,7 +1576,9 @@ EmoteGui.Enabled = false
 end)
 
 while wait() do
-
+if WheelDestroyed = true then
+break
+end;
 
 	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
 		if id ~= i then 
