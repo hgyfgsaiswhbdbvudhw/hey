@@ -6,7 +6,7 @@ print("test")
 local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
 EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
 EmoteGui.Enabled = false
-local WheelDestroyed = false
+local Destroyed = false
 local Mobile: ScreenGui = game:GetObjects("rbxassetid://77707674968679")[1]
 Mobile.Parent = game.Players.LocalPlayer.PlayerGui
 Mobile.Enabled = false
@@ -963,7 +963,7 @@ do
 			game.Players.LocalPlayer.PlayerGui.EmoteMenu.Enabled = false
   			Mobile:Destroy()
 			EmoteGui:Destroy()
-			WheelDestroyed = true
+			Destroyed = true
 			if OptionsPermanentDeath and replicatesignal then
 				replicatesignal(ConnectDiedSignalBackend)
 			end
@@ -1231,7 +1231,7 @@ local seven7 = Wheel.EmoteMenuHolder.RadialMenu.Attach["7"].RenderHolder.Asset
 local eight8 = Wheel.EmoteMenuHolder.RadialMenu.Attach["8"].RenderHolder.Asset
 local page = 1
 RunService.RenderStepped:Connect(function()
-if WheelDestroyed == true then
+if Destroyed == true then
 break
 end;
 	if Wheel.Enabled == true then
@@ -1576,7 +1576,7 @@ EmoteGui.Enabled = false
 end)
 
 while wait() do
-if WheelDestroyed = true then
+if Destroyed = true then
 break
 end;
 
