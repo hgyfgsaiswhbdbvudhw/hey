@@ -130,10 +130,10 @@ uis.InputBegan:Connect(function(input)
 end)
 uis.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.G then
-		if EmoteGui == false then
-		EmoteGui = true
+		if EmoteGui.Enabled == false then
+		EmoteGui.Enabled = true
 		elseif EmoteGui == true then
-		EmoteGui = false
+		EmoteGui.Enabled = false
 		end
 	end
 end)
