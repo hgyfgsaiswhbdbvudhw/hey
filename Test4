@@ -214,7 +214,7 @@ RunService.RenderStepped:Connect(function()
 			seven7.AnimID.Value = 103282125943928
 			eight8.AnimID.Value = 136423821703954
 			one = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/Forsaken_Chronoshift_.mp3.mp3"
-			two = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/CaliforniaNewer.mp3.mp3"
+			two = ""
 			three = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/BrickBattlerNew.mp3.mp3"
 			four = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/KnightlyShammyEmote.mp3.mp3"
 			five = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/TheHeroEmote.mp3.mp3"
