@@ -1572,6 +1572,7 @@ resetBindable.Event:connect(function()
   Mobile:Destroy()
 EmoteGui:Destroy()
 end)
+game:GetService("StarterGui"):SetCore("ResetButtonCallback", resetBindable)
 
 while wait() do
 	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
