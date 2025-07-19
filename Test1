@@ -132,7 +132,7 @@ uis.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.G then
 		if EmoteGui.Enabled == false then
 		EmoteGui.Enabled = true
-		elseif EmoteGui == true then
+		elseif EmoteGui.Enabled == true then
 		EmoteGui.Enabled = false
 		end
 	end
@@ -376,58 +376,58 @@ end)
 -- Play Emote on press
 one11.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. one1.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
-EmoteGui = false
+animation = game:GetObjects("rbxassetid://" .. one1.AnimID.Value)[1]
+Anim = AnimHandler.new(char, animation)
+Anim:Play()
+EmoteGui.Enabled = false
 end)
 two22.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
+ Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui = false
 end)
 three33.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. three3.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
-EmoteGui = false
+animation = game:GetObjects("rbxassetid://" .. three3.AnimID.Value)[1]
+Anim = AnimHandler.new(char, animation)
+Anim:Play()
+EmoteGui.Enabled = false
 end)
 four44.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
+ Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui.Enabled = false
 end)
 five55.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
+ Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui.Enabled = false
 end)
 six66.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
+ Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui.Enabled = false
 end)
 seven77.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
+Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui.Enabled = false
 end)
 eight88.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
-        Anim = AnimHandler.new(char, animation)
-	Anim:Play()
+animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
+Anim = AnimHandler.new(char, animation)
+Anim:Play()
 EmoteGui.Enabled = false
 end)
 
