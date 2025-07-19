@@ -400,35 +400,35 @@ Anim:Stop()
 	animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 five55.MouseButton1Click:Connect(function()
 Anim:Stop()
 	animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 six66.MouseButton1Click:Connect(function()
 Anim:Stop()
 	animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 seven77.MouseButton1Click:Connect(function()
 Anim:Stop()
 	animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 eight88.MouseButton1Click:Connect(function()
 Anim:Stop()
 	animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 
 
