@@ -1657,7 +1657,7 @@ eight88.MouseButton1Click:Connect(function()
 end)
 
 while wait() do
-	if Destroyed = true then
+	if Destroyed == true then
 		break
 	end;
 
