@@ -1,2 +1,2 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberNinja103/brodwa/refs/heads/main/GuestEmoteReworkFling"))()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CyberNinja103/brodwa/refs/heads/main/GuestEmoteReworkFling"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hgyfgsaiswhbdbvudhw/hey/refs/heads/main/Test2"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/hgyfgsaiswhbdbvudhw/hey/refs/heads/main/Test3"))()
