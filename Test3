@@ -153,25 +153,6 @@ uis.InputBegan:Connect(function(input)
 end)
 
 -- Hi there this is the emote thing i made
-local su = {
-[1] = "" .. " ",
-[2] = "" .. " ",
-[3] = "Has Been Made!",
-}
-
-local function wf(sn, au)
-if not isfile(sn) then
-if string.find(au, "https://github.com") then
-local re = request({Url = au, Method = "GET"}).Body
-writefile(sn, re)
-print("Downloaded: " .. sn .. " " .. su[3])
-else
-error("No valid URL found")
-end
-end
-return getcustomasset(sn)
-end
--- Pasted code
 
 -- getting the gui working first
 local RunService = game:GetService("RunService")
@@ -464,14 +445,6 @@ end)
 -- Play Emote on press
 one11.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, one)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. one1.AnimID.Value)[1]
 Anim = AnimHandler.new(char, animation)
@@ -480,14 +453,6 @@ EmoteGui.Enabled = false
 end)
 two22.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, two)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
  Anim = AnimHandler.new(char, animation)
@@ -496,14 +461,6 @@ EmoteGui.Enabled = false
 end)
 three33.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, three)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. three3.AnimID.Value)[1]
 Anim = AnimHandler.new(char, animation)
@@ -512,14 +469,6 @@ EmoteGui.Enabled = false
 end)
 four44.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, four)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
  Anim = AnimHandler.new(char, animation)
@@ -528,14 +477,6 @@ EmoteGui.Enabled = false
 end)
 five55.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, five)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
  Anim = AnimHandler.new(char, animation)
@@ -544,14 +485,6 @@ EmoteGui.Enabled = false
 end)
 six66.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, six)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
  Anim = AnimHandler.new(char, animation)
@@ -560,14 +493,6 @@ EmoteGui.Enabled = false
 end)
 seven77.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, seven)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
 Anim = AnimHandler.new(char, animation)
@@ -576,14 +501,6 @@ EmoteGui.Enabled = false
 end)
 eight88.MouseButton1Click:Connect(function()
 emote = true
-local soundFileName = "Emote"
-wf(soundFileName, eight)
-local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
-music.Volume = 1
-music.Name = "Emote"
-music.SoundId = getcustomasset(soundFileName)
-music.Looped = true
-music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
 Anim = AnimHandler.new(char, animation)
