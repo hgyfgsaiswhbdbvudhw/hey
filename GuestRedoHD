@@ -1265,7 +1265,7 @@ RunService.RenderStepped:Connect(function()
 			 seven = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/JumpstyleExtended.mp3.mp3"
 			 eight = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/LockedNewEmote.mp3.mp3"
 		end
-		if page == 2 then
+		if page == 2 and Wheel.EmoteMenuHolder then
 			Wheel.EmoteMenuHolder.Last.Visible = true
 			one1.Image = "rbxassetid://87183895795869" -- Pop Dance
 			two2.Image = "rbxassetid://125197961882771" -- Prince
@@ -1300,7 +1300,7 @@ RunService.RenderStepped:Connect(function()
 			 seven = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaitEmote.mp3.mp3"
 			 eight = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaveEmote.mp3.mp3"
 		end
-		if page == 3 then
+		if page == 3 and Wheel.EmoteMenuHolder then
 			one1.Image = "rbxassetid://103071006249147" -- Snap
 			two2.Image = "rbxassetid://121965062547127" -- Silly
 			three3.Image = "rbxassetid://121927033287000" -- PYT
@@ -1335,7 +1335,7 @@ RunService.RenderStepped:Connect(function()
 			 eight = ""
 
 		end
-		if page == 4 then
+		if page == 4 and Wheel.EmoteMenuHolder then
 			one1.Image = "rbxassetid://126222345373558" -- Headbanger
 			two2.Image = "rbxassetid://71748174857033" -- Griddy
 			three3.Image = "rbxassetid://101388085235785" -- Gangnam style
@@ -1369,7 +1369,7 @@ RunService.RenderStepped:Connect(function()
 			 seven = ""
 			 eight = ""
 		end
-		if page == 5 then
+		if page == 5 and Wheel.EmoteMenuHolder then
 			Wheel.EmoteMenuHolder.Next.Visible = true
 			one1.Image = "rbxassetid://80678095206124" -- Drumsticks
 			two2.Image = "rbxassetid://124587965197013" -- Hakari Dance
@@ -1404,7 +1404,7 @@ RunService.RenderStepped:Connect(function()
 			 seven = ""
 			 eight = ""
 		end
-		if page == 6 then
+		if page == 6 and Wheel.EmoteMenuHolder then
 			Wheel.EmoteMenuHolder.Next.Visible = false
 			one1.Image = "rbxassetid://88990954850427" -- Pick Up The Phone (Deleted Emote)
 			two2.Image = "rbxassetid://112068843495830" -- Tick Tock (Deleted Emote)
