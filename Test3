@@ -447,7 +447,8 @@ end)
 
 
 while wait() do
-if not hum then
+if hum == nil then
+Mobile:Destroy()
 EmoteGui:Destroy()
 break
 end
