@@ -1569,7 +1569,7 @@ end)
 
 
 while wait() do
-if Empyrean.Rig == nil then
+if not Empyrean.Rig then
 Mobile:Destroy()
 EmoteGui:Destroy()
 break
