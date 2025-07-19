@@ -386,7 +386,7 @@ Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
  Anim = AnimHandler.new(char, animation)
 Anim:Play()
-EmoteGui = false
+EmoteGui.Enabled = false
 end)
 three33.MouseButton1Click:Connect(function()
 Anim:Stop()
