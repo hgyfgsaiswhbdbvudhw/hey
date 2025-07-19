@@ -959,7 +959,7 @@ do
 			end
 
 			Destroy(Rig)
-			Wheel.Enabled = false
+			game.Players.LocalPlayer.PlayerGui.EmoteMenu.Enabled = false
   			Mobile:Destroy()
 			EmoteGui:Destroy()
 			if OptionsPermanentDeath and replicatesignal then
