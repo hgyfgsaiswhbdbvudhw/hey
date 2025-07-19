@@ -33,6 +33,14 @@ Mobile.Enabled = false
 local AnimHandler = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProudNamed/SuperLightning/refs/heads/main/AnimModule/MainModule"))()
 local Anim
 local id
+local one
+local two 
+local three 
+local four 
+local five 
+local six 
+local seven 
+local eight 
 local walk = 108018357044094
 local mouse1 = false
 local finish = false
@@ -207,14 +215,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 129987409356381
 			seven7.AnimID.Value = 103282125943928
 			eight8.AnimID.Value = 136423821703954
-			local one: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/Forsaken_Chronoshift_.mp3.mp3"
-			local two: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/CaliforniaNewer.mp3.mp3"
-			local three: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/BrickBattlerNew.mp3.mp3"
-			local four: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/KnightlyShammyEmote.mp3.mp3"
-			local five: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/TheHeroEmote.mp3.mp3"
-			local six: string = ""
-			local seven: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/JumpstyleExtended.mp3.mp3"
-			local eight: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/LockedNewEmote.mp3.mp3"
+			one = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/Forsaken_Chronoshift_.mp3.mp3"
+			two = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/CaliforniaNewer.mp3.mp3"
+			three = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/BrickBattlerNew.mp3.mp3"
+			four = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/KnightlyShammyEmote.mp3.mp3"
+			five = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/TheHeroEmote.mp3.mp3"
+			 six = ""
+			 seven = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/JumpstyleExtended.mp3.mp3"
+			 eight = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/LockedNewEmote.mp3.mp3"
 		end
 		if page == 2 then
 			Wheel.EmoteMenuHolder.Last.Visible = true
@@ -242,14 +250,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 91842439086880
 			seven7.AnimID.Value = 101753564767248
 			eight8.AnimID.Value = 110963708188466
-			local one: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PopDanceEmote.mp3.mp3"
-			local two: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PrinceofEgipt.mp3.mp3"
-			local three: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PoisonedEmote.mp3.mp3"
-			local four: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/SoRetroEmote.mp3.mp3"
-			local five: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/StockDanceEmote.mp3.mp3"
-			local six: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/SubjectThreeEmote.mp3.mp3"
-			local seven: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaitEmote.mp3.mp3"
-			local eight: string = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaveEmote.mp3.mp3"
+			 one = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PopDanceEmote.mp3.mp3"
+			 two = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PrinceofEgipt.mp3.mp3"
+			 three = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/PoisonedEmote.mp3.mp3"
+			 four = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/SoRetroEmote.mp3.mp3"
+			 five = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/StockDanceEmote.mp3.mp3"
+			 six = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/SubjectThreeEmote.mp3.mp3"
+			 seven = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaitEmote.mp3.mp3"
+			 eight = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/WaveEmote.mp3.mp3"
 		end
 		if page == 3 then
 			one1.Image = "rbxassetid://103071006249147" -- Snap
@@ -276,14 +284,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 115022473742000
 			seven7.AnimID.Value = 95883381151116
 			eight8.AnimID.Value = 111123485542681
-			local one: string = ""
-			local two: string = ""
-			local three: string = ""
-			local four: string = ""
-			local five: string = ""
-			local six: string = ""
-			local seven: string = ""
-			local eight: string = ""
+			 one = ""
+			 two = ""
+			 three = ""
+			 four = ""
+			 five = ""
+			 six = ""
+			 seven = ""
+			 eight = ""
 
 		end
 		if page == 4 then
@@ -311,14 +319,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 77256807942379
 			seven7.AnimID.Value = 118595606413247
 			eight8.AnimID.Value = 93577318714987
-			local one = ""
-			local two = ""
-			local three = ""
-			local four = ""
-			local five = ""
-			local six = ""
-			local seven = ""
-			local eight = ""
+			 one = ""
+			 two = ""
+			 three = ""
+			 four = ""
+			 five = ""
+			 six = ""
+			 seven = ""
+			 eight = ""
 		end
 		if page == 5 then
 			Wheel.EmoteMenuHolder.Next.Visible = true
@@ -346,14 +354,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 132346879800088
 			seven7.AnimID.Value = 91898096393084
 			eight8.AnimID.Value = 138123921316410
-			local one = ""
-			local two = ""
-			local three = ""
-			local four = ""
-			local five = ""
-			local six = ""
-			local seven = ""
-			local eight = ""
+			 one = ""
+			 two = ""
+			 three = ""
+			 four = ""
+			 five = ""
+			 six = ""
+			 seven = ""
+			 eight = ""
 		end
 		if page == 6 then
 			Wheel.EmoteMenuHolder.Next.Visible = false
@@ -381,14 +389,14 @@ RunService.RenderStepped:Connect(function()
 			six6.AnimID.Value = 115658269201410
 			seven7.AnimID.Value = 135000742053505
 			eight8.AnimID.Value = 77694466339734
-			local one = ""
-			local two = ""
-			local three = ""
-			local four = ""
-			local five = ""
-			local six = ""
-			local seven = ""
-			local eight = ""
+			 one = ""
+			 two = ""
+			 three = ""
+			 four = ""
+			 five = ""
+			 six = ""
+			 seven = ""
+			 eight = ""
 			
 		end
 
