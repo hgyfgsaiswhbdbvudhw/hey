@@ -7,6 +7,9 @@
 local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
 EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
 EmoteGui.Enabled = false
+local Mobile: ScreenGui = game:GetObjects("rbxassetid://77707674968679")[1]
+Mobile.Parent = game.Players.LocalPlayer.PlayerGui
+Mobile.Enabled = false
 local AnimHandler = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProudNamed/SuperLightning/refs/heads/main/AnimModule/MainModule"))()
 local Anim
 local id
@@ -17,7 +20,7 @@ local i = 131082534135875
 local sprinting1 = false
 local ability = false
 local run = 136252471123500
-local uis = game:GetService("UserInputService")
+local uis = game:GetService("UserInputService")	
 local walking = false
 local hwalking = 132377038617766
 local blocking = false
@@ -56,6 +59,9 @@ id = i
 Anim = AnimHandler.new(char, animation)
 Anim:Play()
 hum.WalkSpeed = ws
+if uis.TouchEnabled == true then
+Mobile.Enabled = true
+end
 uis.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.LeftShift then
 	sprinting1 = true
@@ -326,6 +332,14 @@ end)
 -- Pages
 local Last = Wheel.EmoteMenuHolder.Last
 local Next = Wheel.EmoteMenuHolder.Next
+local button = game.Players.LocalPlayer.PlayerGui.MobileEmoteButton
+button.Activated:Connect(function()
+	if EmoteGui.Enabled == false then
+		EmoteGui.Enabled = true
+	elseif EmoteGui.Enabled == true then
+		EmoteGui.Enabled = false
+	end
+end)
 Next.Activated:Connect(function()
 	if page < 6 then
 		page += 1
