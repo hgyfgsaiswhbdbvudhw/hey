@@ -1569,7 +1569,7 @@ end)
 
 
 while wait() do
-if hum == nil then
+if char.Torso == nil then
 Mobile:Destroy()
 EmoteGui:Destroy()
 break
