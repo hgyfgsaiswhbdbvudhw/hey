@@ -923,7 +923,7 @@ do
 				end)
 			end
 
-			return {
+			return {	
 				BindableEvent = BindableEvent,
 				Fling = Fling,
 				Rig = Rig
@@ -959,7 +959,7 @@ do
 			end
 
 			Destroy(Rig)
-			
+			Wheel.Enabled = false
   			Mobile:Destroy()
 			EmoteGui:Destroy()
 			if OptionsPermanentDeath and replicatesignal then
@@ -1229,7 +1229,7 @@ local seven7 = Wheel.EmoteMenuHolder.RadialMenu.Attach["7"].RenderHolder.Asset
 local eight8 = Wheel.EmoteMenuHolder.RadialMenu.Attach["8"].RenderHolder.Asset
 local page = 1
 RunService.RenderStepped:Connect(function()
-	if Wheel.Enabled == true and Wheel.EmoteMenuHolder ~= nil then
+	if Wheel.Enabled == true then
 		if page == 1 then
 			Wheel.EmoteMenuHolder.Last.Visible = false
 			one1.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png" -- ChronoShift
@@ -1571,6 +1571,8 @@ EmoteGui.Enabled = false
 end)
 
 while wait() do
+
+
 	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
 		if id ~= i then 
 	    	Anim:Stop()
