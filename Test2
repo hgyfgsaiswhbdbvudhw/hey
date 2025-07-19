@@ -434,6 +434,7 @@ end)
 
 while wait() do
 if not hum then
+EmoteGui:Destroy()
 break
 end
 	if idle == true and taunt == false and hurt == false and ability == false and mouse1 == false and finish == false then
