@@ -3,6 +3,12 @@
 -- Forsakation discord server: https://discord.gg/9XHYkWybxR
 -- Reanimation was made by @emperrrr (Discord)
 -- Discord server for empers reanimate: https://discord.gg/UJ7YtqadPJ
+local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
+EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
+EmoteGui.Enabled = false
+local Mobile: ScreenGui = game:GetObjects("rbxassetid://77707674968679")[1]
+Mobile.Parent = game.Players.LocalPlayer.PlayerGui
+Mobile.Enabled = false
 do
 	local Accessories = {}
 
@@ -953,11 +959,13 @@ do
 			end
 
 			Destroy(Rig)
-
+			
+  			Mobile:Destroy()
+			EmoteGui:Destroy()
 			if OptionsPermanentDeath and replicatesignal then
 				replicatesignal(ConnectDiedSignalBackend)
 			end
-
+			
 			if OptionsDisableHealthBar and not GetCoreGuiEnabled(StarterGui, Health) then
 				SetCoreGuiEnabled(StarterGui, Health, IsHealthEnabled)
 			end
@@ -1063,12 +1071,7 @@ Empyrean = Start({
 	UseServerBreakJoints = false,
 })
 game.Players.LocalPlayer.Character = game.Players.LocalPlayer.Character.Parent
-local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
-EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
-EmoteGui.Enabled = false
-local Mobile: ScreenGui = game:GetObjects("rbxassetid://77707674968679")[1]
-Mobile.Parent = game.Players.LocalPlayer.PlayerGui
-Mobile.Enabled = false
+
 local AnimHandler = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProudNamed/SuperLightning/refs/heads/main/AnimModule/MainModule"))()
 local Anim
 local id
@@ -1566,13 +1569,6 @@ Anim = AnimHandler.new(char, animation)
 Anim:Play()
 EmoteGui.Enabled = false
 end)
--- delete UI on reset
-local resetBindable = Instance.new("BindableEvent")
-resetBindable.Event:connect(function()
-  Mobile:Destroy()
-EmoteGui:Destroy()
-end)
-game:GetService("StarterGui"):SetCore("ResetButtonCallback", resetBindable)
 
 while wait() do
 	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
