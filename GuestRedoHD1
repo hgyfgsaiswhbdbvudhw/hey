@@ -1566,14 +1566,14 @@ Anim = AnimHandler.new(char, animation)
 Anim:Play()
 EmoteGui.Enabled = false
 end)
-
+-- delete UI on reset
+local resetBindable = Instance.new("BindableEvent")
+resetBindable.Event:connect(function()
+  Mobile:Destroy()
+EmoteGui:Destroy()
+end)
 
 while wait() do
-if not char.Torso then
-Mobile:Destroy()
-EmoteGui:Destroy()
-break
-end
 	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
 		if id ~= i then 
 	    	Anim:Stop()
