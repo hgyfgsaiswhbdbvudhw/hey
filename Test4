@@ -180,7 +180,7 @@ local seven7 = Wheel.EmoteMenuHolder.RadialMenu.Attach["7"].RenderHolder.Asset
 local eight8 = Wheel.EmoteMenuHolder.RadialMenu.Attach["8"].RenderHolder.Asset
 local page = 1
 RunService.RenderStepped:Connect(function()
-	if Wheel.Enabled == true and Wheel ~= nil then
+	if Wheel.Enabled == true and Wheel.EmoteMenuHolder ~= nil then
 		if page == 1 then
 			Wheel.EmoteMenuHolder.Last.Visible = false
 			one1.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png" -- ChronoShift
