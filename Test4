@@ -4,26 +4,6 @@
 -- Discord server for empers reanimate: https://discord.gg/UJ7YtqadPJ
 -- Forsakation discord server: https://discord.gg/9XHYkWybxR
 
-local su = {
-[1] = "" .. " ",
-[2] = "" .. " ",
-[3] = "Has Been Made!",
-}
-
-local function wf(sn, au)
-if not isfile(sn) then
-if string.find(au, "https://github.com") then
-local re = request({Url = au, Method = "GET"}).Body
-writefile(sn, re)
-print("Downloaded: " .. sn .. " " .. su[3])
-else
-error("No valid URL found")
-end
-end
-return getcustomasset(sn)
-end
--- Pasted code
-
 local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
 EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
 EmoteGui.Enabled = false
@@ -62,7 +42,7 @@ local hidle = 134624270247120
 local hrun = 115946474977409
 local sprinting = false
 local ws = 12
-local taunt = false
+local emote = false
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local mouse = player:GetMouse()
@@ -173,7 +153,25 @@ uis.InputBegan:Connect(function(input)
 end)
 
 -- Hi there this is the emote thing i made
+local su = {
+[1] = "" .. " ",
+[2] = "" .. " ",
+[3] = "Has Been Made!",
+}
 
+local function wf(sn, au)
+if not isfile(sn) then
+if string.find(au, "https://github.com") then
+local re = request({Url = au, Method = "GET"}).Body
+writefile(sn, re)
+print("Downloaded: " .. sn .. " " .. su[3])
+else
+error("No valid URL found")
+end
+end
+return getcustomasset(sn)
+end
+-- Pasted code
 
 -- getting the gui working first
 local RunService = game:GetService("RunService")
@@ -220,7 +218,7 @@ RunService.RenderStepped:Connect(function()
 			three = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/BrickBattlerNew.mp3.mp3"
 			four = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/KnightlyShammyEmote.mp3.mp3"
 			five = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/TheHeroEmote.mp3.mp3"
-			 six = ""
+			 six = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/TheHeroEmote.mp3.mp3"
 			 seven = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/JumpstyleExtended.mp3.mp3"
 			 eight = "https://github.com/CyberNinja103/Audio/raw/refs/heads/main/LockedNewEmote.mp3.mp3"
 		end
@@ -465,12 +463,14 @@ end)
 
 -- Play Emote on press
 one11.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, one)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. one1.AnimID.Value)[1]
@@ -479,12 +479,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 two22.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, two)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
@@ -493,12 +495,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 three33.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, three)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. three3.AnimID.Value)[1]
@@ -507,12 +511,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 four44.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, four)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
@@ -521,12 +527,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 five55.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, five)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
@@ -535,12 +543,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 six66.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, six)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
@@ -549,12 +559,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 seven77.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, seven)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
@@ -563,12 +575,14 @@ Anim:Play()
 EmoteGui.Enabled = false
 end)
 eight88.MouseButton1Click:Connect(function()
+emote = true
 local soundFileName = "Emote"
 wf(soundFileName, eight)
 local music = Instance.new("Sound", game.Players.LocalPlayer.Character.HumanoidRootPart)
 music.Volume = 1
 music.Name = "Emote"
 music.SoundId = getcustomasset(soundFileName)
+music.Looped = true
 music:Play()
 Anim:Stop()
 animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
@@ -584,49 +598,52 @@ Mobile:Destroy()
 EmoteGui:Destroy()
 break
 end
-	if idle == true and taunt == false and hurt == false and ability == false and mouse1 == false and finish == false then
+	if idle == true and emote == false and hurt == false and ability == false and mouse1 == false and finish == false then
 		if id ~= i then 
-	    Anim:Stop()
+	    	Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. i)[1]
-        Anim = AnimHandler.new(char, animation)
+        	Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play()
 		id = i
 		end
 	end
-	if walking == true and taunt == false and ability == false and hurt == false and sprinting1 == false and finish == false and mouse1 == false then
+	if walking == true and emote == false and ability == false and hurt == false and sprinting1 == false and finish == false and mouse1 == false then
 		if id ~= walk then
 		Anim:Stop()
-				animation = game:GetObjects("rbxassetid://" .. walk)[1]
+		emote = false
+		animation = game:GetObjects("rbxassetid://" .. walk)[1]
         Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play() 
 		id = walk
 		end
 	end
-	if sprinting == true and taunt == false and ability == false and hurt == false and mouse1 == false then
+	if sprinting == true and emote == false and ability == false and hurt == false and mouse1 == false then
 		if id ~= run then
-        Anim:Stop()
+        	Anim:Stop()
+		emote = false
 		animation = game:GetObjects("rbxassetid://" .. run)[1]
-        Anim = AnimHandler.new(char, animation)
+        	Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play() 
 		id = run
 		end
 	end
-	if idle == true and taunt == false and hurt == true and ability == false and mouse1 == false and finish == false then
+	if idle == true and emote == false and hurt == true and ability == false and mouse1 == false and finish == false then
 		if id ~= i then 
-	    Anim:Stop()
+	    	Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. hidle)[1]
-        Anim = AnimHandler.new(char, animation)
+       		Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play()
 		id = i
 		end
 	end
-	if walking == true and taunt == false and ability == false and hurt == true and sprinting1 == false and finish == false and mouse1 == false then
+	if walking == true and emote == false and ability == false and hurt == true and sprinting1 == false and finish == false and mouse1 == false then
 		if id ~= walk then
 		Anim:Stop()
+		emote = false
 				animation = game:GetObjects("rbxassetid://" .. hwalking)[1]
         Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
@@ -634,11 +651,12 @@ end
 		id = walk
 		end
 	end
-	if sprinting == true and taunt == false and ability == false and hurt == true and mouse1 == false then
+	if sprinting == true and emote == false and ability == false and hurt == true and mouse1 == false then
 		if id ~= run then
-        Anim:Stop()
+        	Anim:Stop()
+		emote = false
 		animation = game:GetObjects("rbxassetid://" .. hrun)[1]
-        Anim = AnimHandler.new(char, animation)
+	        Anim = AnimHandler.new(char, animation)
 		Anim.Looped = true
 		Anim:Play() 
 		id = run
@@ -648,20 +666,20 @@ end
 		walking = true
 		sprinting = false
 		idle = false
-		taunt = false
+		emote = false
 	end
 	if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == true and mouse1 == false then
 		walking = false
 		sprinting = true
 		idle = false
-		taunt = false
+		emote = false
 	end
 	if hum.MoveDirection == Vector3.new(0,0,0) then
 		idle = true
 		walking = false
 		sprinting = false
 	end
-	if taunt == false and mouse1 == false and punching == true and blocking == false and charging == false  then
+	if emote == false and mouse1 == false and punching == true and blocking == false and charging == false  then
 		if id ~= punchid then 
 	    Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. punchid)[1]
@@ -671,7 +689,7 @@ end
 		id = punchid
 		end
 	end
-	if taunt == false and mouse1 == false and charging == true and blocking == false and punching == false  then
+	if emote == false and mouse1 == false and charging == true and blocking == false and punching == false  then
 		if id ~= chargeid then
 		Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. chargeid)[1]
@@ -681,7 +699,7 @@ end
 		id = chargeid
 		end
 	end
-	if blocking == true and taunt == false and charging == false and punching == false then
+	if blocking == true and emote == false and charging == false and punching == false then
 		if id ~= blockid then 
 	    Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. blockid)[1]
