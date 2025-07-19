@@ -1063,12 +1063,14 @@ Empyrean = Start({
 	UseServerBreakJoints = false,
 })
 game.Players.LocalPlayer.Character = game.Players.LocalPlayer.Character.Parent
+if EmoteGui == nil then
 local EmoteGui: ScreenGui = game:GetObjects("rbxassetid://70965231817963")[1]
 EmoteGui.Parent = game.Players.LocalPlayer.PlayerGui
 EmoteGui.Enabled = false
 local Mobile: ScreenGui = game:GetObjects("rbxassetid://77707674968679")[1]
 Mobile.Parent = game.Players.LocalPlayer.PlayerGui
 Mobile.Enabled = false
+end
 local AnimHandler = loadstring(game:HttpGet("https://raw.githubusercontent.com/ProudNamed/SuperLightning/refs/heads/main/AnimModule/MainModule"))()
 local Anim
 local id
