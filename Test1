@@ -64,7 +64,7 @@ uis.InputBegan:Connect(function(input)
 		hum.WalkSpeed = 24
 		end
 	end
-	end)
+end)
 uis.InputEnded:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.LeftShift then
 	    sprinting1 = false
@@ -72,76 +72,6 @@ uis.InputEnded:Connect(function(input)
 	    if charging == false and blocking == false and punching == false then
 		hum.WalkSpeed = 12
 		end
-	end
-	end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.One then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 133160365635320)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Two then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 75420633536507)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Three then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 75802192289302)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Four then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 121768360244671)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Five then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 114206095641235)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Six then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 111309618966926)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
-	end
-end)
-uis.InputBegan:Connect(function(input)
-	if input.KeyCode == Enum.KeyCode.Seven then
-        Anim:Stop()
-        id = "taunt"
-		local animation = game:GetObjects("rbxassetid://" .. 134617723143543)[1]
-        Anim = AnimHandler.new(char, animation)
-        taunt = true
-        Anim:Play()
 	end
 end)
 uis.InputBegan:Connect(function(input)
@@ -446,56 +376,56 @@ end)
 -- Play Emote on press
 one11.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. one1.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. one1.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 two22.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. two2.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. two2.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 three33.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. three3.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. three3.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 four44.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. four4.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. four4.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 five55.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. five5.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. five5.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 six66.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. six6.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. six6.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 seven77.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. seven7.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. seven7.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
 end)
 eight88.MouseButton1Click:Connect(function()
 Anim:Stop()
-	animation = game:GetObjects("rbxassetid://" .. eight8.Holder.Value)[1]
+	animation = game:GetObjects("rbxassetid://" .. eight8.AnimID.Value)[1]
         Anim = AnimHandler.new(char, animation)
 	Anim:Play()
 EmoteGui = false
