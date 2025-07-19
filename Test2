@@ -332,7 +332,7 @@ end)
 -- Pages
 local Last = Wheel.EmoteMenuHolder.Last
 local Next = Wheel.EmoteMenuHolder.Next
-local button = game.Players.LocalPlayer.PlayerGui.MobileEmoteButton
+local button = game.Players.LocalPlayer.PlayerGui.MobileEmoteButton.Holders.Left.Widget.IconButton.Menu.IconSpot.ClickRegion
 button.Activated:Connect(function()
 	if EmoteGui.Enabled == false then
 		EmoteGui.Enabled = true
