@@ -1201,7 +1201,7 @@ uis.InputBegan:Connect(function(input)
 		punching = true
 		ability = true
 		hum.WalkSpeed = 3
-		wait(.8)
+		wait(.4)
 		punchvel.Enabled = true
 		wait(.1)
 		punchvel.Enabled = false
@@ -1543,7 +1543,7 @@ PunchButton.Activated:Connect(function()
 		punching = true
 		ability = true
 		hum.WalkSpeed = 3
-		wait(.8)
+		wait(.4)
 		punchvel.Enabled = true
 		wait(.1)
 		punchvel.Enabled = false
