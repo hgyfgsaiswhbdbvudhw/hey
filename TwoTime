@@ -1540,7 +1540,7 @@ RunService.RenderStepped:Connect(function()
 			five5.Image = "rbxassetid://94349587695619" -- Fly
 			six6.Image = "rbxassetid://99019426225118" -- Mesmerizer
 			seven7.Image = "rbxassetid://0" -- pretty dance
-			eight8.Image = "rbxassetid://0" -- Cinderella
+			eight8.Image = "rbxassetid://83576021763587" -- Schadenfreude
 			one1.Holder.Value = "Best Survivor"
 			two2.Holder.Value = "Bye Bye"
 			three3.Holder.Value = "Penguin"
@@ -1548,7 +1548,7 @@ RunService.RenderStepped:Connect(function()
 			five5.Holder.Value = "House Fly"
 			six6.Holder.Value = "Mesmerizer"
 			seven7.Holder.Value = "pretty dance"
-			eight8.Holder.Value = ". . ."
+			eight8.Holder.Value = "Schadenfreude"
 			one1.AnimID.Value = 82611693893508
 			two2.AnimID.Value = 125085338946162
 			three3.AnimID.Value = 140473893442758
@@ -1556,7 +1556,7 @@ RunService.RenderStepped:Connect(function()
 			five5.AnimID.Value = 121751474249467
 			six6.AnimID.Value = "86354010490364"
 			seven7.AnimID.Value = "85315044663872"
-			eight8.AnimID.Value = ""
+			eight8.AnimID.Value = "99907172493781"
 			one = ""
 			two = ""
 			three = ""
