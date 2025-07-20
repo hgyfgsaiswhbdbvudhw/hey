@@ -1140,7 +1140,7 @@ if uis.TouchEnabled == true then
 	Controls.MobileContainer.Visible = true
 	Controls.SprintingButton.Visible = true
 	Controls.DesktopContainer.Visible = false
-	elseif uis.TouchEnabled == false then
+elseif uis.TouchEnabled == false then
 	Mobile.Enabled = false
 	Controls.MobileContainer.Visible = false
 	Controls.SprintingButton.Visible = false
@@ -1151,9 +1151,9 @@ uis.InputBegan:Connect(function(input)
 		sprinting1 = true
 		ws = 24
 		if charging == false and blocking == false and punching == false then
-		
+
 			hum.WalkSpeed = 24
-			
+
 		end
 	end
 end)
@@ -1492,7 +1492,7 @@ RunService.RenderStepped:Connect(function()
 			eight = ""
 
 		end
-if page == 8 and Destroyed == false then
+		if page == 8 and Destroyed == false then
 			Wheel.EmoteMenuHolder.Next.Visible = false
 			one1.Image = "rbxassetid://124186162960822" -- Carried
 			two2.Image = "rbxassetid://91183099073835" -- ByeBye
@@ -1515,10 +1515,10 @@ if page == 8 and Destroyed == false then
 			three3.AnimID.Value = 140473893442758
 			four4.AnimID.Value = 133145243088885
 			five5.AnimID.Value = 121751474249467
-			six6.AnimID.Value = 
-			seven7.AnimID.Value = 
-			eight8.AnimID.Value = 
-			one = ""
+			six6.AnimID.Value = ""
+			seven7.AnimID.Value = ""
+			eight8.AnimID.Value = ""
+				one = ""
 			two = ""
 			three = ""
 			four = ""
@@ -1582,13 +1582,13 @@ end)
 -- Block
 BlockButton.Activated:Connect(function()
 	if blocking == false and ability == false then
-	blocking = true
-	ability = true
-	hum.WalkSpeed = 5
-	wait(1.5)
-	ability = false
-	blocking = false
-	hum.WalkSpeed = ws
+		blocking = true
+		ability = true
+		hum.WalkSpeed = 5
+		wait(1.5)
+		ability = false
+		blocking = false
+		hum.WalkSpeed = ws
 	end
 end)
 -- Charge
