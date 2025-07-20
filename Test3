@@ -1477,7 +1477,7 @@ if page == 7 and Destroyed == false then
 			two2.AnimID.Value = 95127225490093
 			three3.AnimID.Value = 103333882912121
 			four4.AnimID.Value = 114687172329033
-			five5.AnimID.Value = 109569860731042
+			five5.AnimID.Value = 115378790472408
 			six6.AnimID.Value = 122513338460483
 			seven7.AnimID.Value = 99366472605758
 			eight8.AnimID.Value = 92131061687307
