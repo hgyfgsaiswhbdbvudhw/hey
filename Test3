@@ -1501,7 +1501,7 @@ if page == 8 and Destroyed == false then
 			six6.Image = "rbxassetid://0" 
 			seven7.Image = "rbxassetid://0" 
 			eight8.Image = "rbxassetid://0" 
-			one1.Holder.Value = "Best Survivor
+			one1.Holder.Value = "Best Survivor"
 			two2.Holder.Value = "Bye Bye"
 			three3.Holder.Value = "Penguin"
 			four4.Holder.Value = "Cat Dance"
