@@ -1502,7 +1502,7 @@ if page == 8 and Destroyed == false then
 			six6.Image = "rbxassetid://0" -- static
 			seven7.Image = "rbxassetid://0" -- macerina
 			eight8.Image = "rbxassetid://0" -- Cinderella
-			one1.Holder.Value = "Best Survivor
+			one1.Holder.Value = "Best Survivor"
 			two2.Holder.Value = "Bye Bye"
 			three3.Holder.Value = "Penguin"
 			four4.Holder.Value = "Cat Dance"
