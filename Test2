@@ -1517,7 +1517,7 @@ RunService.RenderStepped:Connect(function()
 			five5.AnimID.Value = 121751474249467
 			six6.AnimID.Value = "86354010490364"
 			seven7.AnimID.Value = "85315044663872"
-			eight8.AnimID.Value = "99907172493781"
+			eight8.AnimID.Value = "75798689481181"
 			one = ""
 			two = ""
 			three = ""
