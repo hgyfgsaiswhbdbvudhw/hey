@@ -1149,11 +1149,14 @@ if uis.TouchEnabled == true then
 elseif uis.TouchEnabled == false then
 	Mobile.Enabled = false
 	Controls.DesktopContainer.Block.Image = "rbxassetid://129077533212750"
+	Controls.DesktopContainer.Block.Clipping.Top.Image = "rbxassetid://129077533212750"
+	Controls.DesktopContainer.Charge.Image = "rbxassetid://77707049887484"
+	Controls.DesktopContainer.Charge.Clipping.Top.Image = "rbxassetid://77707049887484"
+	Controls.DesktopContainer.Punch.Image = "rbxassetid://95580729656404"
+	Controls.DesktopContainer.Punch.Clipping.Top.Image = "rbxassetid://95580729656404"
 	Controls.DesktopContainer.Block.AbilityName.Text = "Dagger"
 	Controls.DesktopContainer.Charge.AbilityName.Text = "Crouch"
 	Controls.DesktopContainer.Punch.AbilityName.Text = "Ritual"
-	Controls.DesktopContainer.Charge.Image = "rbxassetid://77707049887484"
-	Controls.DesktopContainer.Punch.Image = "rbxassetid://95580729656404"
 	Controls.MobileContainer.Visible = false
 	Controls.SprintingButton.Visible = false
 	Controls.DesktopContainer.Visible = true
@@ -1606,12 +1609,15 @@ local Gui = game.Players.LocalPlayer.PlayerGui.ControlsUI
 local SprintButton = Gui.SprintingButton
 local BlockButton = Gui.MobileContainer.Block
 BlockButton.Image = "rbxassetid://129077533212750"
+BlockButton.Clipping.Top.Image = "rbxassetid://129077533212750"
 BlockButton.AbilityName.Text = "Dagger"
 local ChargeButton = Gui.MobileContainer.Charge
 ChargeButton.Image = "rbxassetid://77707049887484"
+ChargeButton.Clipping.Top.Image = "rbxassetid://77707049887484"
 ChargeButton.AbilityName.Text = "Crouch"
 local PunchButton = Gui.MobileContainer.Punch
 PunchButton.Image = "rbxassetid://95580729656404"
+PunchButton.Clipping.Top.Image = "rbxassetid://95580729656404"
 PunchButton.AbilityName.Text = "Ritual"
 -- Toggle Sprint
 SprintButton.Activated:Connect(function()
