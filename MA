@@ -1190,7 +1190,7 @@ uis.InputBegan:Connect(function(input)
 		blocking = true
 		ability = true
 		hum.WalkSpeed = 5
-		wait(1.5)
+		wait(2.5)
 		ability = false
 		blocking = false
 		hum.WalkSpeed = ws
