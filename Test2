@@ -1511,7 +1511,7 @@ button.Activated:Connect(function()
 	end
 end)
 Next.Activated:Connect(function()
-	if page < 6 then
+	if page < 7 then
 		page += 1
 	end
 end)
