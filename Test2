@@ -1499,7 +1499,7 @@ RunService.RenderStepped:Connect(function()
 			three3.Image = "rbxassetid://106270433212018" -- Penguin
 			four4.Image = "rbxassetid://93387041641721" -- AICatDance
 			five5.Image = "rbxassetid://94349587695619" -- Fly
-			six6.Image = "rbxassetid://0" -- static
+			six6.Image = "rbxassetid://99019426225118" -- Mesmerizer
 			seven7.Image = "rbxassetid://0" -- macerina
 			eight8.Image = "rbxassetid://0" -- Cinderella
 			one1.Holder.Value = "Best Survivor"
@@ -1507,7 +1507,7 @@ RunService.RenderStepped:Connect(function()
 			three3.Holder.Value = "Penguin"
 			four4.Holder.Value = "Cat Dance"
 			five5.Holder.Value = "House Fly"
-			six6.Holder.Value = ". . ."
+			six6.Holder.Value = "Mesmerizer"
 			seven7.Holder.Value = ". . ."
 			eight8.Holder.Value = ". . ."
 			one1.AnimID.Value = 82611693893508
@@ -1515,7 +1515,7 @@ RunService.RenderStepped:Connect(function()
 			three3.AnimID.Value = 140473893442758
 			four4.AnimID.Value = 133145243088885
 			five5.AnimID.Value = 121751474249467
-			six6.AnimID.Value = ""
+			six6.AnimID.Value = "102332849201255"
 			seven7.AnimID.Value = ""
 			eight8.AnimID.Value = ""
 				one = ""
