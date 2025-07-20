@@ -13,6 +13,8 @@ Mobile.Enabled = false
 local Controls: ScreenGui = game:GetObjects("rbxassetid://102160674504380")[1]
 Controls.Parent = game.Players.LocalPlayer.PlayerGui
 Controls.Enabled = true
+Controls.MobileContainer.Visible = false
+Controls.Version.Text = "Version: 2time 1.0"
 do
 	local Accessories = {}
 
@@ -1641,15 +1643,15 @@ BlockButton.Activated:Connect(function()
 	if ability == false and crouching == false then
 		stab = true
 		ability = true
-		hum.WalkSpeed = 3
+		hum.WalkSpeed = 0
 		stabvel.Enabled = true
 		wait(.4)
 		stabvel.Enabled = false
+		wait(.5)
 		ability = false
 		stab = false
 		hum.WalkSpeed = ws
 	elseif ability == false and crouching == true then
-		stab = true
 		ability = true
 		hum.WalkSpeed = 3
 		Anim:Stop()
@@ -1657,17 +1659,19 @@ BlockButton.Activated:Connect(function()
 		Anim = AnimHandler.new(char, animation)
 		Anim:Play()
 		wait(.4)
+		hum.WalkSpeed = 0
 		lungevel.Enabled = true
 		lunging = true
-		wait(.4)
+		wait(.2)
+		hum.WalkSpeed = 3
 		lungevel.Enabled = false
-		stab = false
 		lunging = false
 		Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. lend)[1]
 		Anim = AnimHandler.new(char, animation)
 		Anim:Play()
-		wait(8)
+		wait(1.2)
+		crouching = false
 		ability = false
 		hum.WalkSpeed = ws
 	end
@@ -1681,12 +1685,22 @@ ChargeButton.Activated:Connect(function()
 		animation = game:GetObjects("rbxassetid://" .. cstart)[1]
 		Anim = AnimHandler.new(char, animation)
 		Anim:Play()
-		hum.WalkSpeed = 9
+		hum.WalkSpeed = 0
 		wait(.4)
+		hum.WalkSpeed = 9
+		Anim:Stop()
+		animation = game:GetObjects("rbxassetid://" .. cidle)[1]
+		Anim = AnimHandler.new(char, animation)
+		Anim:Play()
 		ability = false
-	elseif ability == false and crouching == true then
+	elseif  ability == false and crouching == true then
 		crouching = false
+		idle = true
 		hum.WalkSpeed = ws
+		Anim:Stop()
+		animation = game:GetObjects("rbxassetid://" .. i)[1]
+		Anim = AnimHandler.new(char, animation)
+		Anim:Play()
 	end
 end)
 -- Punch
