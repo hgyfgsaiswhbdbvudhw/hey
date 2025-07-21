@@ -1,4 +1,3 @@
-]]
 
 -- written by Emper
 -- anyone who has the method can receive this code
