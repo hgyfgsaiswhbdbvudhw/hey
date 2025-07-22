@@ -1178,10 +1178,11 @@ local function onButton1Down()
 		Anim2:Play()
 		Anim:Stop()
 		id = m1
+		wait(.3)
 		attackvel.Enabled = true
-		wait(0.2)
+		wait(0.1)
 		attackvel.Enabled = false
-		wait(.8)
+		wait(.6)
 		Anim2:Destroy()
 		animation1:Destroy()
 		mouse1 = false
@@ -1658,7 +1659,7 @@ BlockButton.Activated:Connect(function()
 		Anim:Stop()
 		id = m1
 		attackvel.Enabled = true
-		wait(0.2)
+		wait(0.05)
 		attackvel.Enabled = false
 		wait(.8)
 		Anim2:Destroy()
@@ -1668,22 +1669,6 @@ BlockButton.Activated:Connect(function()
 end)
 -- Charge
 ChargeButton.Activated:Connect(function()
-	if ability == false and mouse1 == false then
-		ability = true
-		hum.WalkSpeed = 0
-		Anim:Stop()
-		local animation = game:GetObjects("rbxassetid://" .. DigitalFootprint)[1]
-		animation.Parent = char
-		Anim = AnimHandler.new(char, animation)
-		Anim:Play()
-		id = DigitalFootprint
-		wait(3)
-		ability = false
-		hum.WalkSpeed = ws
-	end
-end)
--- Punch
-PunchButton.Activated:Connect(function()
 	if ability == false and mouse1 == false then
 		ability = true
 		hum.WalkSpeed = 0.1
@@ -1700,6 +1685,23 @@ PunchButton.Activated:Connect(function()
 		Anim = AnimHandler.new(char, animation)
 		Anim:Play()
 		wait(1)
+		ability = false
+		hum.WalkSpeed = ws
+	end
+end)
+-- Punch
+PunchButton.Activated:Connect(function()
+	if ability == false and mouse1 == false then
+
+		ability = true
+		hum.WalkSpeed = 0
+		Anim:Stop()
+		local animation = game:GetObjects("rbxassetid://" .. DigitalFootprint)[1]
+		animation.Parent = char
+		Anim = AnimHandler.new(char, animation)
+		Anim:Play()
+		id = DigitalFootprint
+		wait(3)
 		ability = false
 		hum.WalkSpeed = ws
 	end
