@@ -1658,10 +1658,11 @@ BlockButton.Activated:Connect(function()
 		Anim2:Play()
 		Anim:Stop()
 		id = m1
+		wait(.3)
 		attackvel.Enabled = true
-		wait(0.05)
+		wait(0.1)
 		attackvel.Enabled = false
-		wait(.8)
+		wait(.6)
 		Anim2:Destroy()
 		animation1:Destroy()
 		mouse1 = false
