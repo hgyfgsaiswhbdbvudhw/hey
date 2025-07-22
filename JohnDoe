@@ -1102,7 +1102,6 @@ local sprinting1 = false
 local ability = false
 local run = 132653655520682
 local uis = game:GetService("UserInputService")	
-local hasKeyboard = uis.KeyboardEnabled
 local walking = false
 local hwalking = 132377038617766
 local hurt = false
@@ -1170,7 +1169,7 @@ uis.InputEnded:Connect(function(input)
 	end
 end)
 local function onButton1Down()
-	if id ~= m1 and ability == false and hasKeyboard == true and mouse1 == false then 
+	if id ~= m1 and ability == false and uis.KeyboardEnabled == true and mouse1 == false then 
 		mouse1 = true
 		local Anim2
 		local animation1 = game:GetObjects("rbxassetid://" .. m1)[1]
@@ -1179,7 +1178,10 @@ local function onButton1Down()
 		Anim2:Play()
 		Anim:Stop()
 		id = m1
-		wait(1)
+		attackvel.Enabled = true
+		wait(0.2)
+		attackvel.Enabled = false
+		wait(.8)
 		Anim2:Destroy()
 		animation1:Destroy()
 		mouse1 = false
@@ -1550,7 +1552,7 @@ RunService.RenderStepped:Connect(function()
 		end
 		if page == 9 and Destroyed == false then
 			Wheel.EmoteMenuHolder.Next.Visible = false
-			one1.Image = "rbxassetid://0" -- Guitar
+			one1.Image = "rbxassetid://98861649534706" -- Guitar
 			two2.Image = "rbxassetid://0" -- 
 			three3.Image = "rbxassetid://0" -- 
 			four4.Image = "rbxassetid://0" -- 
@@ -1559,13 +1561,13 @@ RunService.RenderStepped:Connect(function()
 			seven7.Image = "rbxassetid://0" --
 			eight8.Image = "rbxassetid://0" -- 
 			one1.Holder.Value = "GuitarGuitar"
-			two2.Holder.Value = ""
-			three3.Holder.Value = ""
-			four4.Holder.Value = ""
-			five5.Holder.Value = ""
-			six6.Holder.Value = ""
-			seven7.Holder.Value = ""
-			eight8.Holder.Value = ""
+			two2.Holder.Value = ". . ."
+			three3.Holder.Value = ". . ."
+			four4.Holder.Value = ". . ."
+			five5.Holder.Value = ". . ."
+			six6.Holder.Value = ". . ."
+			seven7.Holder.Value = ". . ."
+			eight8.Holder.Value = ". . ."
 			one1.AnimID.Value = 77434400165211
 			two2.AnimID.Value = 0
 			three3.AnimID.Value = 0
@@ -1646,7 +1648,7 @@ end)
 
 -- Block
 BlockButton.Activated:Connect(function()
-	if id ~= m1 and ability == false and hasKeyboard == true and mouse1 == false then 
+	if id ~= m1 and ability == false and uis.KeyboardEnabled == true and mouse1 == false then 
 		mouse1 = true
 		local Anim2
 		local animation1 = game:GetObjects("rbxassetid://" .. m1)[1]
@@ -1655,7 +1657,10 @@ BlockButton.Activated:Connect(function()
 		Anim2:Play()
 		Anim:Stop()
 		id = m1
-		wait(1)
+		attackvel.Enabled = true
+		wait(0.2)
+		attackvel.Enabled = false
+		wait(.8)
 		Anim2:Destroy()
 		animation1:Destroy()
 		mouse1 = false
@@ -1888,5 +1893,5 @@ while wait() do
 		walking = false
 		sprinting = false
 	end
-		
+
 end
