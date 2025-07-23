@@ -1571,8 +1571,8 @@ RunService.RenderStepped:Connect(function()
 			eight8.Holder.Value = ". . ."
 			one1.AnimID.Value = 77434400165211
 			two2.AnimID.Value = 81883187469620
-			three3.AnimID.Value = 75513960644342
-			four4.AnimID.Value = 125027188864914
+			three3.AnimID.Value = 111167841365705
+			four4.AnimID.Value = 75581661112703
 			five5.AnimID.Value = 0
 			six6.AnimID.Value = 0
 			seven7.AnimID.Value = 0
