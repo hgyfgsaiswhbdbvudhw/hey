@@ -1059,7 +1059,7 @@ Empyrean = Start({
 		Timeout = 1,
 		ToolFling = false,--"Boombox",
 	},
-	DisableCharacterCollisions = true,
+	DisableCharacterCollisions = false,
 	DisableHealthBar = true,
 	DisableRigCollisions = false,
 	HatDrop = true,
