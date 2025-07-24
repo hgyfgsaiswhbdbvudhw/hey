@@ -1790,7 +1790,7 @@ while wait() do
 			id = walk
 		end
 	end
-	if sprinting == true and emote == false and ability == false and hurt == false and mouse1 == false and stalking == false then
+	if sprinting == true and emote == false and ability == false and hurt == false and stalking == false then
 		if id ~= run then
 			Anim:Stop()
 			emote = false
