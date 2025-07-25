@@ -1223,7 +1223,7 @@ uis.InputBegan:Connect(function(input)
 		ability = true
 		hum.WalkSpeed = 0.1
 		local targetPosition = mouse.Hit.p
-		player.Character:SetPrimaryPartCFrame(CFrame.new(targetPosition) + Vector3.new(0,4,0))
+		player.Character.HumanoidRootPart.CFrame = CFrame.new(targetPosition) + Vector3.new(0,4,0)
 		Anim:Stop()
 		animation = game:GetObjects("rbxassetid://" .. teleport)[1]
 		Anim = AnimHandler.new(char, animation)
@@ -1251,6 +1251,7 @@ uis.InputBegan:Connect(function(input)
 end)
 uis.InputBegan:Connect(function(input)
 	if input.KeyCode == Enum.KeyCode.R and ability == false and debounce == false then
+		hum.JumpPower = 0
 		debounce = true
 		ability = true
 		hum.WalkSpeed = 0.1
@@ -1283,6 +1284,7 @@ uis.InputBegan:Connect(function(input)
 			ability = false
 			id = Dashing
 			hum.WalkSpeed = ws
+			hum.JumpPower = 50
 			debounce = false
 		end
 	end
@@ -1299,12 +1301,14 @@ function onTouched(hit)
 			Anim = AnimHandler.new(char, animation)
 			Anim:Play() 
 			wait(0.8)
+			hum.JumpPower = 50
 			ability = false
 			id = DashHit
 			hum.WalkSpeed = ws
 			wait(2)
 			debounce = false
 		elseif hit:IsA("Part") and hit.CanCollide == true then
+			
 			char.HumanoidRootPart.CanCollide = true
 			dash = false
 			char.HumanoidRootPart.DashVelocity:Destroy()
@@ -1313,6 +1317,7 @@ function onTouched(hit)
 			Anim = AnimHandler.new(char, animation)
 			Anim:Play() 
 			wait(1)
+			hum.JumpPower = 50
 			char.HumanoidRootPart.CanCollide = false
 			ability = false
 			id = DashHit
@@ -1645,16 +1650,16 @@ RunService.RenderStepped:Connect(function()
 			two2.Holder.Value = "Dance (DOD)"
 			three3.Holder.Value = "MyEmoteIdea (DOD)"
 			four4.Holder.Value = "Squingle (DOD)"
-			five5.Holder.Value = ". . ."
-			six6.Holder.Value = ". . ."
+			five5.Holder.Value = "Bird Brain (pwned by 1400)"
+			six6.Holder.Value = "Sidesteppers (pwned by 1400)"
 			seven7.Holder.Value = ". . ."
 			eight8.Holder.Value = ". . ."
 			one1.AnimID.Value = 77434400165211
 			two2.AnimID.Value = 81883187469620
 			three3.AnimID.Value = 111167841365705
 			four4.AnimID.Value = 75581661112703
-			five5.AnimID.Value = 0
-			six6.AnimID.Value = 0
+			five5.AnimID.Value = 130181188955084
+			six6.AnimID.Value = 103908544327177
 			seven7.AnimID.Value = 0
 			eight8.AnimID.Value = 0
 			one = ""
@@ -1874,7 +1879,7 @@ while wait() do
 		idle = false
 		emote = false
 	end
-	if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == true and mouse1 == false then
+	if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == true then
 		walking = false
 		sprinting = true
 		idle = false
