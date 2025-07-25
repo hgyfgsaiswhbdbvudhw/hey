@@ -1123,6 +1123,15 @@ local debounce = false
 local idle = true
 local char = game.Players.LocalPlayer.Character
 local hum: Humanoid = char:FindFirstChild("Humanoid")
+local walksfx = Instance.new("Sound")
+walksfx.SoundId = 174960816
+walksfx.Parent = char.HumanoidRootPart
+walksfx.PlaybackSpeed = 1
+walksfx.PlaybackRegionsEnabled = true
+walksfx.LoopRegion = NumberRange.new(0, 0.475)
+walksfx.Volume = 5
+walksfx.Looped = true
+walksfx.Playing = false
 local attackvel = Instance.new("VectorForce")
 attackvel.Parent = char.HumanoidRootPart
 attackvel.Attachment0 = char.HumanoidRootPart.RootAttachment
@@ -1863,6 +1872,7 @@ while wait() do
 	end
 	if sprinting == true and emote == false and ability == false and hurt == false then
 		if id ~= run then
+			walksfx.Playing = true
 			Anim:Stop()
 			emote = false
 			animation = game:GetObjects("rbxassetid://" .. run)[1]
@@ -1878,17 +1888,20 @@ while wait() do
 		sprinting = false
 		idle = false
 		emote = false
+		walksfx.Playing = false
 	end
 	if hum.MoveDirection ~= Vector3.new(0, 0, 0) and sprinting1 == true then
 		walking = false
 		sprinting = true
 		idle = false
 		emote = false
+		
 	end
 	if hum.MoveDirection == Vector3.new(0,0,0) then
 		idle = true
 		walking = false
 		sprinting = false
+		walksfx.Playing = false
 	end
 	
 end
