@@ -1639,12 +1639,12 @@ RunService.RenderStepped:Connect(function()
 		if page == 1 and Destroyed == false then
 			Wheel.EmoteMenuHolder.Last.Visible = false
 			one1.Image = "rbxassetid://98861649534706" -- Guitar
-			two2.Image = "rbxassetid://0" -- DOD
-			three3.Image = "rbxassetid://0" -- DOD
-			four4.Image = "rbxassetid://0" -- DOD
-			five5.Image = "rbxassetid://0" -- 
-			six6.Image = "rbxassetid://0" -- 
-			seven7.Image = "rbxassetid://0" --
+			two2.Image = "rbxassetid://0" -- Dance
+			three3.Image = "rbxassetid://0" -- MyEmoteIdea
+			four4.Image = "rbxassetid://0" -- Squingle
+			five5.Image = "rbxassetid://0" -- Bird Brain
+			six6.Image = "rbxassetid://0" -- Sidesteppers
+			seven7.Image = "rbxassetid://0" -- JX1DX1 laugh
 			eight8.Image = "rbxassetid://0" -- 
 			one1.Holder.Value = "GuitarGuitar"
 			two2.Holder.Value = "Dance (DOD)"
@@ -1652,7 +1652,7 @@ RunService.RenderStepped:Connect(function()
 			four4.Holder.Value = "Squingle (DOD)"
 			five5.Holder.Value = "Bird Brain (pwned by 1400)"
 			six6.Holder.Value = "Sidesteppers (pwned by 1400)"
-			seven7.Holder.Value = ". . ."
+			seven7.Holder.Value = "JX1DX1 laugh (pwned by 1400)"
 			eight8.Holder.Value = ". . ."
 			one1.AnimID.Value = 77434400165211
 			two2.AnimID.Value = 81883187469620
@@ -1660,7 +1660,7 @@ RunService.RenderStepped:Connect(function()
 			four4.AnimID.Value = 75581661112703
 			five5.AnimID.Value = 130181188955084
 			six6.AnimID.Value = 103908544327177
-			seven7.AnimID.Value = 0
+			seven7.AnimID.Value = 121195814806450
 			eight8.AnimID.Value = 0
 			one = ""
 			two = ""
